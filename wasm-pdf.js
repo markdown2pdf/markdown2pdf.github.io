@@ -152,6 +152,13 @@ function createPandocOptions(hidePageNumbers, {
   const variables = {
     "code-block-font-size": "\\footnotesize",
     colorlinks: true,
+    geometry: [
+      "left=2.5cm",
+      "right=2.5cm",
+      "top=2.2cm",
+      "bottom=2.1cm",
+      "footskip=1.0cm"
+    ],
     urlcolor: "linktextblue",
     linkcolor: "linktextblue",
     citecolor: "linktextblue",
