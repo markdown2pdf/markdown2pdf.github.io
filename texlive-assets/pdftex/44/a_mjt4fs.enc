@@ -1,0 +1,63 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_mjt4fsniifvwqtsvtehp434jxb
+% Encoding created by otftotfm on Fri May 15 12:09:53 2026
+% Command line follows encoding
+/AutoEnc_mjt4fsniifvwqtsvtehp434jxb [
+%00
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /uni00B8 /uni02DB /uni201A /uni2013 /.notdef
+%10
+  /.notdef /.notdef /uni201E /.notdef /.notdef /.notdef /.notdef /.notdef
+  /uni2190 /uni2192 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /uni2423 /.notdef /.notdef /.notdef /uni0024 /.notdef /.notdef /uni0027
+  /.notdef /.notdef /uni2217 /.notdef /uni002C /.notdef /uni002E /uni2044
+%30
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /uni27E8 /uni2212 /uni27E9 /.notdef
+%40
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /uni2127 /.notdef /.notdef
+%50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni2126
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni2191 /uni2193
+%60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni266A /.notdef
+%70
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%80
+  /.notdef /.notdef /.notdef /.notdef /uni2020 /uni2021 /uni2225 /uni2030
+  /uni2022 /uni2103 /.notdef /.notdef /uni0192 /uni20A1 /uni20A9 /.notdef
+%90
+  /.notdef /.notdef /uni20A4 /.notdef /uni203D /uni2E18 /uni20AB /uni2122
+  /uni2031 /.notdef /.notdef /uni2116 /.notdef /uni212E /uni25E6 /.notdef
+%A0
+  /.notdef /.notdef /uni00A2 /uni00A3 /uni00A4 /uni00A5 /uni00A6 /uni00A7
+  /.notdef /uni00A9 /uni00AA /.notdef /uni00AC /.notdef /uni00AE /.notdef
+%B0
+  /uni00B0 /uni00B1 /uni00B2 /uni00B3 /.notdef /uni00B5 /uni00B6 /uni00B7
+  /uni203B /uni00B9 /uni00BA /uni221A /uni00BC /uni00BD /uni00BE /uni20AC
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni00D7 /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni00F7 /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ts1
+% --tfm-directory=fonts/tfm/adwaita/adwaitamono
+% --vf-directory=fonts/vf/adwaita/adwaitamono
+% --truetype-directory=fonts/truetype/adwaita/adwaitamono
+% --encoding-directory=fonts/enc/dvips/adwaitamono
+% --map-file=fonts/map/dvips/adwaitamono/AdwaitaMono.map --no-updmap --force
+% --coding-scheme=TEX TEXT COMPANION SYMBOLS 1---TS1 --feature=onum
+% /tmp/adwaita-build/static/AdwaitaMono-Regular.ttf Adwaita-Mono-tosf-ts1'

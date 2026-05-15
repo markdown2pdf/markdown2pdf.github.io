@@ -28,8 +28,6 @@
 \usepackage{array}
 \usepackage{colortbl}
 
-\renewcommand{\bfdefault}{sb}
-
 \renewcommand{\labelitemii}{\textopenbullet}
 \renewcommand{\labelitemiii}{\raisebox{0.2ex}{\scriptsize$\blacksquare$}}
 \renewcommand{\labelitemiv}{\raisebox{0.2ex}{\scriptsize$\blacksquare$}}
@@ -305,6 +303,10 @@
   \DeclareUnicodeCharacter{253C}{\mdcross}%
 \fi
 
+
+\addtokomafont{section}{\LARGE}
+\addtokomafont{subsection}{\Large}
+\addtokomafont{subsubsection}{\large}
 
 \RedeclareSectionCommand[
   beforeskip=1.25\baselineskip,

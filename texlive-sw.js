@@ -1,4 +1,4 @@
-const DB_NAME = 'texlive-cache-db';
+const DB_NAME = 'texlive-cache-db-v2';
 const STORE_NAME = 'assets';
 const DB_VERSION = 1;
 
