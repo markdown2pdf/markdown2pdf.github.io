@@ -34,7 +34,7 @@ export function createPdfBuilder({
     return preparePromise;
   }
 
-  async function build({ markdown, hidePageNumbers, mediaFiles = {}, onStage = () => {} }) {
+  async function build({ markdown, hidePageNumbers, useSourceSans, mediaFiles = {}, onStage = () => {} }) {
     await prepare();
 
     const normalizedMarkdown = normalizeLegacyMarkdown(markdown, mediaFiles);
@@ -46,6 +46,7 @@ export function createPdfBuilder({
       extraHeaders,
       extraVariables,
       implicitFigures,
+      useSourceSans,
       hasBibliography: Boolean(mediaFiles["bib.bib"])
     });
 
@@ -147,6 +148,7 @@ function createPandocOptions(hidePageNumbers, {
   extraHeaders,
   extraVariables,
   implicitFigures,
+  useSourceSans,
   hasBibliography
 }) {
   const variables = {
@@ -174,6 +176,10 @@ function createPandocOptions(hidePageNumbers, {
 
   if (hidePageNumbers) {
     variables.pagestyle = "empty";
+  }
+
+  if (useSourceSans) {
+    variables.sourcesans = true;
   }
 
   return {

@@ -4,7 +4,8 @@ import { replaceRefs } from "./compiler-utils.js";
 
 const STORAGE_KEYS = {
   markdown: "md2pdf-content",
-  noPageNumbers: "md2pdf-no-page-numbers"
+  noPageNumbers: "md2pdf-no-page-numbers",
+  useSourceSans: "md2pdf-use-source-sans"
 };
 
 const DEFAULT_MARKDOWN = `# Fast Tour
@@ -62,7 +63,8 @@ const elements = {
   noPageNumbers: el("noPageNumbers"),
   pdfFrame: el("pdfFrame"),
   resetWorkspaceBtn: el("resetWorkspaceBtn"),
-  status: el("status")
+  status: el("status"),
+  useSourceSans: el("useSourceSans")
 };
 
 let easyMDE = null;
@@ -180,6 +182,10 @@ function bindEvents() {
 
   elements.noPageNumbers.addEventListener("change", () => {
     safeStorageSet(STORAGE_KEYS.noPageNumbers, String(elements.noPageNumbers.checked));
+  });
+
+  elements.useSourceSans.addEventListener("change", () => {
+    safeStorageSet(STORAGE_KEYS.useSourceSans, String(elements.useSourceSans.checked));
   });
 
   elements.errorModalClose.addEventListener("click", closeErrorModal);
@@ -367,6 +373,7 @@ async function buildPdf() {
     const result = await pdfBuilder.build({
       markdown: resolved.markdown,
       hidePageNumbers: elements.noPageNumbers.checked,
+      useSourceSans: elements.useSourceSans.checked,
       mediaFiles: resolved.mediaFiles,
       onStage: setStatus
     });
@@ -538,6 +545,7 @@ function resetAliasDragState() {
 
 function restorePreferences() {
   elements.noPageNumbers.checked = safeStorageGet(STORAGE_KEYS.noPageNumbers) === "true";
+  elements.useSourceSans.checked = safeStorageGet(STORAGE_KEYS.useSourceSans) === "true";
 }
 
 function updatePdfPreview(blob) {
@@ -572,7 +580,9 @@ async function resetWorkspace() {
   setMarkdown("");
   safeStorageRemove(STORAGE_KEYS.markdown);
   safeStorageRemove(STORAGE_KEYS.noPageNumbers);
+  safeStorageRemove(STORAGE_KEYS.useSourceSans);
   elements.noPageNumbers.checked = false;
+  elements.useSourceSans.checked = false;
   await imageStore.reset();
   setStatus("Started fresh");
 }
